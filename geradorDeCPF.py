@@ -10,7 +10,6 @@ def ler_cpf(tamanho):
         return ler_cpf(tamanho)                      #Usando recursividade (Chamando uma função dentro dela mesma) O return é usada para voltar ao valor original
     else:
         return list(cpf)
-#Fim da definição da função ler_cpf()
 
 def digito_verificador(cpf, digito):                     #Verifica os dois ultimos numeros
     soma = 0
@@ -30,32 +29,6 @@ def digito_verificador(cpf, digito):                     #Verifica os dois ultim
         return str(0)
     else:
         return str(11 - modulo11)
-
-#Funcoes que ficaram em desuso
-
-#def primeiro_verificador(cpf):                     #Verifica o primeiro dos dois ultimos numeros
-#    soma = 0                                          
-#    for i in range(len(cpf)):
-#        soma += int(cpf[i]) * (10 - i)
-#
-#    modulo11 = soma % 11
-#
-#    if(modulo11 < 2):
-#        return str(0)
-#    else:
-#        return str(11 - modulo11)
-#
-#def segundo_verificador(cpf):                         #Verifica o segundo dos dois ultimos numeros
-#    soma = 0                                          
-#    for i in range(len(cpf)):
-#        soma += int(cpf[i]) * (11 - i)
-#
-#    modulo11 = soma % 11
-#
-#    if(modulo11 < 2):
-#        return str(0)
-#    else:
-#        return str(11 - modulo11)
 
 def formatar_cpf(cpf):
     cpf.insert(3, '.')
@@ -90,4 +63,28 @@ def validar_cpf():
 
 gerar_cpf()
 
+#Funcoes que ficaram em desuso
 
+#def primeiro_verificador(cpf):                     #Verifica o primeiro dos dois ultimos numeros
+#    soma = 0                                          
+#    for i in range(len(cpf)):
+#        soma += int(cpf[i]) * (10 - i)
+#
+#    modulo11 = soma % 11
+#
+#    if(modulo11 < 2):
+#        return str(0)
+#    else:
+#        return str(11 - modulo11)
+#
+#def segundo_verificador(cpf):                      #Verifica o segundo dos dois ultimos numeros
+#    soma = 0                                          
+#    for i in range(len(cpf)):
+#        soma += int(cpf[i]) * (11 - i)
+#
+#    modulo11 = soma % 11
+#
+#    if(modulo11 < 2):
+#        return str(0)
+#    else:
+#        return str(11 - modulo11)
