@@ -51,7 +51,7 @@ print(termos)
 
 ultimo = valor 
 if valor % 2 == 0:
-    ultimo = valor - 1
+    ultimo = valor - 1 
 
 soma = termos * (1 + ultimo) / 2
 soma = int(soma)
