@@ -55,4 +55,4 @@ if valor % 2 == 0:
 
 soma = termos * (1 + ultimo) / 2
 soma = int(soma)
-print(soma)
+print(soma) 
