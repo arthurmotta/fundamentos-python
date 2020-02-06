@@ -41,10 +41,18 @@ print(soma)
 #################################################################################################################################################################
 
 #Usando a fórmula de Pascal | Sn = n(a1 + an) / 2
+import math 
 
 valor = int(input("Informe o valor de N: "))
 
 termos = (1 + valor) / 2
-termos = round(termos) #Arredondando 
-
+termos = math.floor(termos) #Arredondando
 print(termos)
+
+ultimo = valor 
+if valor % 2 == 0:
+    ultimo = valor - 1
+
+soma = termos * (1 + ultimo) / 2
+soma = int(soma)
+print(soma)
